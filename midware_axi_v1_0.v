@@ -20,13 +20,11 @@
     	output wire [63 : 0] M_AXIS_TDATA,
     	output wire          M_AXIS_TVALID,
     	input  wire          M_AXIS_TREADY,
-    	output wire          M_AXIS_TLAST,
 	
     	//AXI-Stream Slave Port
     	input  wire [63 : 0] S_AXIS_TDATA,
     	input  wire          S_AXIS_TVALID,
     	output wire          S_AXIS_TREADY,
-    	input  wire          S_AXIS_TLAST,
 		// User ports ends
 		// Do not modify the ports beyond this line
 
@@ -84,12 +82,12 @@
 		.M_AXIS_TDATA  		( M_AXIS_TDATA  		),
 		.M_AXIS_TVALID 		( M_AXIS_TVALID 		),
 		.M_AXIS_TREADY 		( M_AXIS_TREADY 		),
-		.M_AXIS_TLAST  		( M_AXIS_TLAST  		),
+		.M_AXIS_TLAST  		(   		),
 		
 		.S_AXIS_TDATA  		( S_AXIS_TDATA  		),
 		.S_AXIS_TVALID 		( S_AXIS_TVALID 		),
 		.S_AXIS_TREADY 		( S_AXIS_TREADY 		),
-		.S_AXIS_TLAST  		( S_AXIS_TLAST  		)
+		.S_AXIS_TLAST  		(   		)
 	);
 
 	// Add user logic here
